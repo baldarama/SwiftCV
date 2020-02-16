@@ -138,7 +138,7 @@ void PyrUp(Mat src, Mat dst, Size size, int borderType) {
     cv::pyrUp(*src, *dst, cvSize, borderType);
 }
 
-struct Rect BoundingRect(Contour con) {
+struct CVRect BoundingRect(Contour con) {
     std::vector<cv::Point> pts;
 
     for (size_t i = 0; i < con.length; i++) {

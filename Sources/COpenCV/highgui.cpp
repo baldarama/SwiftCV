@@ -37,7 +37,7 @@ void Window_Resize(const char* winname, int width, int height) {
     cv::resizeWindow(winname, width, height);
 }
 
-struct Rect Window_SelectROI(const char* winname, Mat img) {
+struct CVRect Window_SelectROI(const char* winname, Mat img) {
     cv::Rect bRect = cv::selectROI(winname, *img);
     Rect r = {bRect.x, bRect.y, bRect.width, bRect.height};
     return r;

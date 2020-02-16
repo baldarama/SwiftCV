@@ -45,7 +45,7 @@ typedef struct Point2f {
 } Point2f;
 
 // Wrapper for an individual cv::cvPoint
-typedef struct Point {
+typedef struct CVPoint {
     int x;
     int y;
 } Point;
@@ -66,7 +66,7 @@ typedef struct Contours {
 } Contours;
 
 // Wrapper for an individual cv::cvRect
-typedef struct Rect {
+typedef struct CVRect {
     int x;
     int y;
     int width;
@@ -193,7 +193,7 @@ void Contours_Close(struct Contours cs);
 void KeyPoints_Close(struct KeyPoints ks);
 void Rects_Close(struct Rects rs);
 void Mats_Close(struct Mats mats);
-void Point_Close(struct Point p);
+void Point_Close(struct CVPoint p);
 void Points_Close(struct Points ps);
 void DMatches_Close(struct DMatches ds);
 void MultiDMatches_Close(struct MultiDMatches mds);
