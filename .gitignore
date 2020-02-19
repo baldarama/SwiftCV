@@ -4,3 +4,4 @@
 /*.xcodeproj
 .idea
 .ipynb_checkpoints
+.swiftpm/
